@@ -2,7 +2,10 @@
 # ZCZC WEEK# MINUTES LogCode Description
 # LogCode: https://osp4diss.vlsm.org/ETC/logCodes.txt
 
-ZCZC W02 L43 TXT/myrank.tex related, including peer review.
+
+ZCZC W03 120 L12 Assignment #02
+ZCZC W03 100 L02 CLASSROOM related
+ZCZC W02 5 L43 TXT/myrank.tex related, including peer review.
 ZCZC W02 5 L41 TXT/mylog.txt related.
 ZCZC W02 20 L26 GnuPG, key-gen, encrypt/decrypt.
 ZCZC W02 50 L12 Assignment #02
