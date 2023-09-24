@@ -2,8 +2,10 @@
 # ZCZC WEEK# MINUTES LogCode Description
 # LogCode: https://osp4diss.vlsm.org/ETC/logCodes.txt
 
-
-ZCZC W03 120 L12 Assignment #02
+ZCZC W03 40 L88 Workout/Sport/Exercise/ETC.
+ZCZC W03 50 L60 Install/Reinstall/Restore/Backup Virtual Box
+ZCZC W03 40 L01 SCELE/Discord related
+ZCZC W03 160 L13 Assignment #03
 ZCZC W03 100 L02 CLASSROOM related
 ZCZC W02 5 L43 TXT/myrank.tex related, including peer review.
 ZCZC W02 5 L41 TXT/mylog.txt related.
