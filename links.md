@@ -10,3 +10,5 @@ permalink: LINKS/
 * [PowerShell looks better!](https://www.youtube.com/watch?v=-G6GbXGo4wo) -- Honestly, I think studying cs is one thing. But being cool also counts as an important thing. That's exactly why I want to make my Powershell looks better. I made my powershell such that it looks like an ubuntu CLI kinda thingy.
 * [fork() in c](https://www.geeksforgeeks.org/fork-system-call/) -- How I interpret fork() in c is basically like an amoeba. It splits itself in half and called it it's decendants (child). 
 * [PID and PPID](https://linuxguru85.blogspot.com/2014/07/what-are-pid-and-ppid-child-and-parent.html) -- Found this webthat showed me what PID and PPID really means.
+* [Dining-Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) -- A problem in which computer need to know when to "pick up a fork" or "put down a fork".
+* [Peterson's algorithm](https://en.wikipedia.org/wiki/Peterson%27s_algorithm) -- An algorithm that use flag and turn to know which process can go in.
