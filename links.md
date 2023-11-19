@@ -12,3 +12,4 @@ permalink: LINKS/
 * [PID and PPID](https://linuxguru85.blogspot.com/2014/07/what-are-pid-and-ppid-child-and-parent.html) -- Found this webthat showed me what PID and PPID really means.
 * [Dining-Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) -- A problem in which computer need to know when to "pick up a fork" or "put down a fork".
 * [Peterson's algorithm](https://en.wikipedia.org/wiki/Peterson%27s_algorithm) -- An algorithm that use flag and turn to know which process can go in.
+* [Chapter 5 of LFS from Kertonex](https://www.youtube.com/watch?v=uggsnHSELos) -- I mean, what can I say? It's a very helpful tutorial. I followed his tutorial and compare my output with the video. It's also nice to have some company to run LFS with.
