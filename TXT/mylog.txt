@@ -1,10 +1,14 @@
 # Log Format
 # ZCZC WEEK# MINUTES LogCode Description
 # LogCode: https://osp4diss.vlsm.org/ETC/logCodes.txt
-ZCZC W07 120 L18 Assignment #08
-ZCZC W07 5 L41 TXT/mylog.txt related.
-ZCZC W07 5 L43 TXT/myrank.tex related, including peer review.
-ZCZC W07 100 L02 CLASSROOM/ZOOM meetings related
+ZCZC W09 200 L02 CLASSROOM/ZOOM meeting related
+ZCZC W09 200 L19 Assignment #09
+ZCZC W09 5 L41 TXT/mylog.txt related.
+ZCZC W09 5 L43 TXT/myrank.tex related, including peer review.
+ZCZC W08 120 L18 Assignment #08
+ZCZC W08 5 L41 TXT/mylog.txt related.
+ZCZC W08 5 L43 TXT/myrank.tex related, including peer review.
+ZCZC W08 100 L02 CLASSROOM/ZOOM meetings related
 ZCZC W07 30 L28 Jekyll, including Ruby.
 ZCZC W07 30 L17 Assignment #07
 ZCZC W07 5 L41 TXT/mylog.txt related.
