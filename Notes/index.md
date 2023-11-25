@@ -216,7 +216,7 @@ Let's be honest, we all want to sleep and let chapter 8 of this LFS build itself
 
 ```bash
 cd sources
-wget -c https://KronosDP.github.io/os232/NOTES/ch8.sh 
+wget -c https://raw.githubusercontent.com/KronosDP/os232/master/Notes/ch8.sh
 bash ch8.sh
 rm -f ch8.sh
 ```
