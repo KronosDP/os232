@@ -40,6 +40,7 @@ Because chroot is still primitive (translation: we still haven't compile too muc
 
 ```bash
 echo "NPROC=$(nproc) MAKEFLAGS=$MAKEFLAGS"
+```
 
 Number of core and makeflags should be the same with what you've set before.
 
