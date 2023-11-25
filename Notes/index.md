@@ -181,15 +181,13 @@ if [ -h $LFS/dev/shm ]; then
 else
   mount -t tmpfs -o nosuid,nodev tmpfs $LFS/dev/shm
 fi
-
+```
 
 # Going to Chroot for the Second (or third) Time
 After running the things above, you want to go back to `root`.
  
 *Please don't forget to do this on `root` to get into `chroot`.*
 ```bash
-
-
 chroot "$LFS" /usr/bin/env -i   \
     HOME=/root                  \
     TERM="$TERM"                \
