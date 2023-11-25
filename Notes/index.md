@@ -7,8 +7,42 @@ My notes for Chapter 8 of Linux From Scratch - Week 10 of my Operating System Co
 # Important
 This script still need some testing, please do not run this first (except you want to help me test this, please do help me in testing this script :D)
 
-# A little story
-After doing week 9, remember that we will not work on LFS mode anymore. Remember that we're gonna do all this on root onchroot environment.
+# Disclaimer
+*The sentence on this part is arguably the most important sentence on this webpage. There is no guarantee or any warranty that this will work for the first time. Please (and I really do mean PLEASE) UNDERSTAND EACH AND EVERYTHING THAT YOU TYPE ON YOUR TERMINAL*. You don't want to waste hours of time do you?
+
+# Optimization Problem (optional but very interesting)
+*This thing can speed up this week's compilation process*. If you don't want to waste your time, please use more than 4 cores (if your laptop has more than 4 cores). Either ways *skip this part if you don't bother or you have only 4 cores*. 
+
+I don't know, haven't explored it yet but I think we can use 6 cores when compiling this chapter. I'm not really sure tho. The only thing that I'm sure of is that I tried to compile chapter 6 with 6 cores and it speeds it up (my cpu utilization on my task manager (not top on my linux)) increased. The problem is that I don't know if it finished compiling faster. The only thing I know is that when compiling a certain package (I forgot which one is it but I think it's gcc. I'm not sure tho) it takes 1-2 minutes being stuck. Because of that, I stop the compilation process and I think that failed.
+
+Maybe I'm not patient enough, maybe multicore doesn't work. Either ways, try it! It's the only way to find out right? If you want to do 6 cores build of the LFS, go to the setting on your virtual box and go to system. After that, go to processors and increase your core.
+
+Note that I'm having 6 cores on my laptop. If you want to try compiling your linux with more core, remember to set your `MAKEFLAGS` to `-jn` where n is the number of cores you want to use.
+
+Here's how:
+```bash
+export MAKEFLAGS='-j6'
+```
+
+
+Then check your “LFS”, “ARCH”, “NPROC”, and “MAKEFLAGS” environment variables for root
+
+```bash
+echo "LFS=\"$LFS $(df $LFS|tail -1|awk '{print $1,int($2/1000000)"G"}')\" ARCH $(arch) NPROC=$(nproc) MAKEFLAGS=$MAKEFLAGS"
+```
+
+output should be (assuming you're using 6 cores) 
+```
+LFS="/mnt/lfs /dev/sdb2 32G" ARCH x86_64 NPROC=6 MAKEFLAGS=-j6
+```
+
+Because chroot is still primitive (translation: we still haven't compile too much thing so yeah, I'll call that primitive) we want to just check NPROC and MAKEFLAGS.
+
+```bash
+echo "NPROC=$(nproc) MAKEFLAGS=$MAKEFLAGS"
+
+Number of core and makeflags should be the same with what you've set before.
+
 
 # Setup for Chapter 8
 Note that this part is taken from my friend's [github](https://github.com/riorio805/os232/blob/master/NOTES/lfsch8s0-5.md?plain=1). Kudos to him.
@@ -41,10 +75,14 @@ chroot "$LFS" /usr/bin/env -i   \
     /bin/bash --login
 ```
 
-## 8.0.E Exiting chroot environment
-When you want to exit just do this
-```bash
-exit
+Output should be
+```
+(lfs chroot) root:/#
+```
+when you do ls it should be 
+```
+bin   dev  home  lib64       media  opt   root  sbin     srv  tmp  var
+boot  etc  lib   lost+found  mnt    proc  run   sources  sys  usr
 ```
 
 ## 8.0.X Pre-flight Checks
@@ -218,7 +256,9 @@ Let's be honest, we all want to sleep and let chapter 8 of this LFS build itself
 cd sources
 ```
 
-Go to the copy paste the script to the terminal (I'm sorry you can't use wget because wget still doesn't exist yet. *Please confirm again that if you do `ls` you'll see many .tar.xz files. Here is the [link to the script](https://raw.githubusercontent.com/KronosDP/os232/master/Notes/ch8.txt)
+Copy paste the script to the terminal (I'm sorry you can't use wget because wget still doesn't exist on our system yet. I've tried it.). *Please confirm again that if you do `ls` you'll see many .tar.xz files*. Here is the [link to the script](https://raw.githubusercontent.com/KronosDP/os232/master/Notes/ch8.txt)
+
+*Before running the script, please pray. Hope that it works and you don't waste 8 hours of sleeping and be greeted with lame errors*
 
 Run the script by simply pressing enter.
 
