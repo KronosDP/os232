@@ -46,6 +46,53 @@ echo "NPROC=$(nproc) MAKEFLAGS=$MAKEFLAGS"
 
 Number of core and makeflags should be the same with what you've set before.
 
+## Update on Compiling on More core
+
+After doing some extensive tests today (25th November 2023) that takes a whole day of mine (it's okay tho, I enjoyed it :D) I managed to get some interesting result. I get that we *can* do build on more cores to speed up the build process. Here are some images and it's caption.
+
+### Using 6 Cores
+
+This is the end of chapter 6 build screenshot with it's time. Note that here *I am using 6 cores and 8GB ram on virtualbox.* My physical ram is 16GB.
+
+<img src="ch6-6cores.jpg" width=800 alt="A pic of chapter 6 with 6 cores and 8GB ram build time">
+
+The picture of end of chapter 7. Still, *6 cores, 8GB ram on virtualbox.*
+
+<img src="ch7-6cores.jpg" width=800 alt="A pic of chapter 7 with 6 cores and 8GB ram build time">
+
+Final backup tarball size with 6 cores and 8GB ram
+
+<img src="tar-6cores.jpg" width=800 alt="Tarball size of 6 cores">
+
+### Using 4 Cores
+
+This is the end of chapter 6 build screenshot with it's time. Note that here *I am using 6 cores and 8GB ram on virtualbox.* My physical ram is 16GB.
+
+<img src="ch6-4cores.jpg" width=800 alt="A pic of chapter 6 with 4 cores and 4GB ram build time">
+
+The picture of end of chapter 7. Still, *4 cores, 4GB ram on virtualbox.*
+
+<img src="ch7-4cores.jpg" width=800 alt="A pic of chapter 7 with 4 cores and 4GB ram build time">
+
+Final backup tarball size with 4 cores and 4GB ram
+
+<img src="tar-4cores.jpg" width=800 alt="Tarball size of 4 cores">
+
+# Story of the Mysterious Variance of Tarball size
+
+I noticed something on my backup tarball after doing week 9. It is different. The cause is I try to compress tarball like this:
+
+```bash
+tar -I 'xz -T0' -cpvf $HOME/lfs-temp-tools-12.0.tar.xz .
+```
+
+The `-T0` is for the `xz` to use all available threads for the compression process.
+
+My working hypothesis is that is the reason why my tarball size with more cores is significantly bigger than the one with the usual tarball script. I don't know if this is true or if this is false. But you do you brother.
+
+p.s. Sorry for the long story :D. The part below is where we start working on week 10.
+
+
 
 # Setup for Chapter 8
 Note that this part is taken from my friend's [github](https://github.com/riorio805/os232/blob/master/NOTES/lfsch8s0-5.md?plain=1). Kudos to him.
