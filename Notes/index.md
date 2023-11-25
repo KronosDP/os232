@@ -7,7 +7,7 @@ My notes for Chapter 8 of Linux From Scratch - Week 10 of my Operating System Co
 # Important
 This script still need some testing, please do not run this first (except you want to help me test this, please do help me in testing this script :D)
 
-* PLEASE AND I DO MEAN PLEASE READ THE WHOLE THING AND UNDERSTAND IT. DON'T JUST COPY PASTE IT. YOU HAVE BEEN WARNED. I HAVE SPOKEN *
+*PLEASE AND I DO MEAN PLEASE READ THE WHOLE THING AND UNDERSTAND IT. DON'T JUST COPY PASTE IT. YOU HAVE BEEN WARNED. I HAVE SPOKEN*
 
 # Disclaimer
 *The sentence on this part is arguably the most important sentence on this webpage. There is no guarantee or any warranty that this will work for the first time. Please (and I really do mean PLEASE) UNDERSTAND EACH AND EVERYTHING THAT YOU TYPE ON YOUR TERMINAL*. You don't want to waste hours of time do you?
