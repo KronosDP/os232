@@ -2,7 +2,7 @@
 My notes for Chapter 8 of Linux From Scratch - Week 10 of my Operating System Course
 
 #### Scripts:
-[Week 10: LFS ch.8](ch8.sh) Not done yet
+[Week 10: LFS ch.8](https://raw.githubusercontent.com/KronosDP/os232/master/Notes/ch8.txt) Not done yet. 
 
 # Important
 This script still need some testing, please do not run this first (except you want to help me test this, please do help me in testing this script :D)
@@ -216,10 +216,16 @@ Let's be honest, we all want to sleep and let chapter 8 of this LFS build itself
 
 ```bash
 cd sources
-wget -c https://raw.githubusercontent.com/KronosDP/os232/master/Notes/ch8.sh
-bash ch8.sh
-rm -f ch8.sh
 ```
+
+Go to the copy paste the script to the terminal (I'm sorry you can't use wget because wget still doesn't exist yet. *Please confirm again that if you do `ls` you'll see many .tar.xz files. Here is the [link to the script](https://raw.githubusercontent.com/KronosDP/os232/master/Notes/ch8.txt)
+
+Run the script by simply pressing enter.
+
+Sleep (literally, not your laptop)...
+
+Hours later it should be done...
+
 
 # Total Time
 Well idk, I haven't test the script yet. Againt *I haven't test the script yet*. All I know is just leave it and go to sleep.
