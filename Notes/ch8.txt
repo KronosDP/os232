@@ -2,10 +2,8 @@
 # This script still need checking
 
 # List of questions:
-#  Python stuffs
+# Python stuffs (exit from directory?)
 # exit from tester user?
-
-# Note that the location of this script is being run on sources directory on chroot.
 
 packages = (
 Man-pages-6.05.01
@@ -176,7 +174,7 @@ include /etc/ld.so.conf.d/*.conf
 
 EOF
 mkdir -pv /etc/ld.so.conf.d
-cd $LFS/sources//..
+cd $LFS/sources/
 
 # Zlib-1.2.13
 cd Zlib-1.2.13
@@ -333,7 +331,7 @@ make install
 install -v -dm755  /usr/share/doc/dejagnu-1.6.3
 install -v -m644   doc/dejagnu.{html,txt} /usr/share/doc/dejagnu-1.6.3
 make check
-cd $LFS/sources//..
+cd $LFS/sources/
 
 # Binutils-2.41
 cd Binutils-2.41
@@ -353,7 +351,7 @@ make -k check
 grep '^FAIL:' $(find -name '*.log')
 make tooldir=/usr install
 rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
-cd $LFS/sources//..
+cd $LFS/sources/
 
 # GMP-6.3.0
 cd GMP-6.3.0
@@ -508,7 +506,7 @@ grep found dummy.log
 rm -v dummy.c a.out dummy.log
 mkdir -pv /usr/share/gdb/auto-load/usr/lib
 mv -v /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
-cd $LFS/sources//..
+cd $LFS/sources/
 
 # Pkgconf-2.0.1
 cd Pkgconf-2.0.1
@@ -1101,7 +1099,7 @@ sed 's|lib.*udevd|sbin/udevd|'                                        \
   > /usr/share/man/man8/udevd.8
 rm  /usr/share/man/man8/systemd-*.8
 udev-hwdb update
-cd $LFS/sources//..
+cd $LFS/sources/
 
 # Man-DB-2.11.2
 cd Man-DB-2.11.2
@@ -1179,7 +1177,7 @@ makeinfo -o      doc/com_err.info ../lib/et/com_err.texinfo
 install -v -m644 doc/com_err.info /usr/share/info
 install-info --dir-file=/usr/share/info/dir /usr/share/info/com_err.info
 sed 's/metadata_csum_seed,//' -i /etc/mke2fs.conf
-cd $LFS/sources//..
+cd $LFS/sources/
 
 # Sysklogd-1.5.1
 cd Sysklogd-1.5.1
