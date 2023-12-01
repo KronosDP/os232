@@ -15,3 +15,4 @@ permalink: LINKS/
 * [Chapter 5 of LFS from Kertonex](https://www.youtube.com/watch?v=uggsnHSELos) -- I mean, what can I say? It's a very helpful tutorial. I followed his tutorial and compare my output with the video. It's also nice to have some company to run LFS with.
 * [Linux From Scratch Chapter 6 introduction](https://www.linuxfromscratch.org/lfs/view/12.0/chapter06/introduction.html) -- The chapter where we do cross compiling stuffs.
 * [Linux From Scratch Chapter 7 introduction](https://www.linuxfromscratch.org/lfs/view/12.0/chapter07/introduction.html) -- The chapter in which we build from a chroot environtment. This is very important for chaper 8.
+* [My tutorial of LFS ch 8](https://kronosdp.github.io/os232/Notes/) -- A shameless self-promotion. Made this with love. Hope that this can help people doing chapter 8 because it can be quite daunting at first.

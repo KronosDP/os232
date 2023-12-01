@@ -1459,8 +1459,14 @@ cd $LFS/sources/
 
 *Congratulations, you've build LFS.*
 
-# Final note
-Notice that you haven't clean the folder that you've extracted. Please make your own script to do that cuz I'm too lazy. I've been doing this for the past week and I enjoyed it, but I need to touch grass and do other stuffs. Thanks :D. Note that you need to clean it, or else you'll get jorok points?
+# Removing every tarbal cuz why not
+
+I haven't test this script below so use it at your own risk.
+
+```bash
+find . -maxdepth 1 -type f -not \( -name "*.tar.xz" -o -name "*.tar.gz" -o -name "*.patch" -o -name "CONTRIBUTING" -o -name "LICENSE" -o -name "Makefile" -o -name "NEWS" -o -name "README" -o -name "SECURITY" -o -name "africa" -o -name "antarctica" -o -name "asia" -o -name "australasia" -o -name "backward" -o -name "backzone" -o -name "calendars" -o -name "check*" -o -name "dist" -o -name "etcetera" -o -name "europe" -o -name "factory" -o -name "*.tab" -o -name "*.list" -o -name "*.awk" -o -name "*.zi" -o -name "md5sums" -o -name "northamerica" -o -name "*.bz2" -o -name "southamerica" -o -name "*.html" -o -name "*.tzs" -o -name "version" -o -name "wget-list-sysv" -o -name "*.tab" \) -exec echo {} \;
+```
+
 
 # Total Time
 Well idk, I haven't test the script yet. Againt *I haven't test the script yet*. All I know is just leave it and go to sleep.
