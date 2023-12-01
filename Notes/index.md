@@ -2,7 +2,7 @@
 My notes for Chapter 8 of Linux From Scratch - Week 10 of my Operating System Course
 
 #### Scripts:
-THere are no scripts. only copy paste stuffs
+There are no scripts. Only copy paste stuffs
 
 # Important
 This script still need some testing, please do not run this first (except you want to help me test this, please do help me in testing this script :D)
@@ -398,8 +398,8 @@ mkdir -pv /etc/ld.so.conf.d
 cd $LFS/sources/
 ```
 
-These part will install the rest. I have only tested until this part.
-```bash
+The last part will ask you to set up password.
+```
 # Zlib-1.2.13
 cd zlib-1.2.13
 ./configure --prefix=/usr
@@ -694,8 +694,10 @@ useradd -D --gid 999
 sed -i '/MAIL/s/yes/no/' /etc/default/useradd
 passwd root
 cd $LFS/sources/
+```
 
-
+**Be careful, this is the boy with 42 sbu.**
+```bash
 # GCC-13.2.0 (the boy with 42 SBU)
 cd gcc-13.2.0
 case $(uname -m) in
@@ -1455,6 +1457,9 @@ cd $LFS/sources/
 ```
 
 *Congratulations, you've build LFS.*
+
+# Final note
+Notice that you haven't clean the folder that you've extracted. Please make your own script to do that cuz I'm too lazy. I've been doing this for the past week and I enjoyed it, but I need to touch grass and do other stuffs. Thanks :D. Note that you need to clean it, or else you'll get jorok points?
 
 # Total Time
 Well idk, I haven't test the script yet. Againt *I haven't test the script yet*. All I know is just leave it and go to sleep.
