@@ -399,7 +399,7 @@ cd $LFS/sources/
 ```
 
 The last part will ask you to set up password.
-```
+```bash
 # Zlib-1.2.13
 cd zlib-1.2.13
 ./configure --prefix=/usr
@@ -692,11 +692,15 @@ grpconv
 mkdir -p /etc/default
 useradd -D --gid 999
 sed -i '/MAIL/s/yes/no/' /etc/default/useradd
+```
 passwd root
+
+go back to sources directory
+```bash
 cd $LFS/sources/
 ```
 
-**Be careful, this is the boy with 42 sbu.**
+**Be careful, this is the boy with 42 sbu.** The rest is just copy paste. Everything should be okay
 ```bash
 # GCC-13.2.0 (the boy with 42 SBU)
 cd gcc-13.2.0
