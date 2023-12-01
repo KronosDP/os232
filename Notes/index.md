@@ -692,8 +692,8 @@ grpconv
 mkdir -p /etc/default
 useradd -D --gid 999
 sed -i '/MAIL/s/yes/no/' /etc/default/useradd
-```
 passwd root
+```
 
 go back to sources directory
 ```bash
@@ -998,10 +998,7 @@ make MANSUFFIX=ssl install
 mv -v /usr/share/doc/openssl /usr/share/doc/openssl-3.1.2
 cp -vfr doc/* /usr/share/doc/openssl-3.1.2
 cd $LFS/sources/
-```
 
-**I havent test the packages below. Please test this with me**
-```bash
 # Kmod-30
 cd kmod-30
 ./configure --prefix=/usr          \
