@@ -702,6 +702,7 @@ cd $LFS/sources/
 
 **Be careful, this is the boy with 42 sbu.** The rest is just copy paste. Everything should be okay
 ```bash
+time{
 # GCC-13.2.0 (the boy with 42 SBU)
 cd gcc-13.2.0
 case $(uname -m) in
@@ -1455,6 +1456,7 @@ patch -Np1 -i ../sysvinit-3.07-consolidated-1.patch
 make
 make install
 cd $LFS/sources/
+}
 ```
 
 *Congratulations, you've build LFS.*
