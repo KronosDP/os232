@@ -1461,10 +1461,10 @@ Congratulations, you've build LFS.
 
 # Removing every tarbal cuz why not
 
-I haven't test this script below so use it at your own risk.
+I dunno weather or not you need to remove *.patch files. so I didn't delete it here.
 
 ```bash
-find . -maxdepth 1 -type f -not \( -name "*.tar.xz" -o -name "*.tar.gz" -o -name "*.patch" -o -name "CONTRIBUTING" -o -name "LICENSE" -o -name "Makefile" -o -name "NEWS" -o -name "README" -o -name "SECURITY" -o -name "africa" -o -name "antarctica" -o -name "asia" -o -name "australasia" -o -name "backward" -o -name "backzone" -o -name "calendars" -o -name "check*" -o -name "dist" -o -name "etcetera" -o -name "europe" -o -name "factory" -o -name "*.tab" -o -name "*.list" -o -name "*.awk" -o -name "*.zi" -o -name "md5sums" -o -name "northamerica" -o -name "*.bz2" -o -name "southamerica" -o -name "*.html" -o -name "*.tzs" -o -name "version" -o -name "wget-list-sysv" -o -name "*.tab" \) -exec echo {} \;
+ls | grep -vE '\.tar\.|patch' | xargs rm -r
 ```
 
 
